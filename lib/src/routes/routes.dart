@@ -8,6 +8,7 @@ import '../pages/MedicalVideo.dart';
 import '../pages/SymptomCheck.dart';
 import '../pages/TreatmentItems.dart';
 import '../pages/TriageResults.dart';
+import '../pages/More.dart';
 
 class AppRoutes {
   static const String dashboard = '/dashboard';
@@ -19,6 +20,7 @@ class AppRoutes {
   static const String symptomCheck = '/symptomCheck';
   static const String treatmentItems = '/treatmentItems';
   static const String triageResults = '/triageResults';
+  static const String more = '/more';
 
   static Map<String, WidgetBuilder> getRoutes() {
     return {
@@ -31,6 +33,7 @@ class AppRoutes {
       symptomCheck: (context) => SymptomCheckPage(),
       treatmentItems: (context) => TreatmentItemsPage(),
       triageResults: (context) => TriageResultsPage(),
+      more: (context) => MorePage(),
     };
   }
 }
